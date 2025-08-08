@@ -23,7 +23,6 @@ up_github/
     VQA-SA-question.json   # 评测问题文件
   requirements.txt         # 运行依赖
   run.sh                   # 运行脚本（Linux）
-  .gitignore               # 忽略大文件/私有数据
 ```
 
 ## 环境准备（Linux）
