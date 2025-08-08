@@ -1,0 +1,23 @@
+# Large or private assets
+model/
+images/
+InternVL3-output/
+DeepEyes-output/
+*.pt
+*.bin
+*.safetensors
+*.ckpt
+
+# Private dataset paths
+data/
+VQA-SA-question.json
+
+# Results and visualization
+VQA-SA-results*.json
+*.png
+*.jpg
+*.jpeg
+
+# Python cache
+__pycache__/
+*.pyc 
