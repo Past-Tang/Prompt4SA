@@ -5,27 +5,24 @@
 [![MS-SWIFT](https://img.shields.io/badge/ms--swift-3.x-success.svg)](https://github.com/modelscope/ms-swift)
 [![Platform Linux](https://img.shields.io/badge/Platform-Linux-lightgrey.svg)](https://kernel.org)
 
-> 论文题目：Prompt4SA: Simple Prompting for Spatial Awareness
-> GitHub 描述：A prompt-only baseline for VQA-SA
 
-本目录用于提交与复现我们在 MARS2 竞赛 VQA-SA 赛道的最佳成绩核心代码与说明。核心脚本为 `bast.py`，使用 MS-SWIFT (`swift.llm`) + vLLM 推理引擎进行多模态视觉问答（空间意识）。
+本目录用于提交与复现我们在 MARS2 竞赛 VQA-SA 赛道的代码与说明。核心脚本为 `bast.py`，使用 MS-SWIFT (`swift.llm`) + vLLM 推理引擎进行多模态视觉问答（空间意识）。
 
-重要：数据集为保密内容，请勿上传。请在本地按如下路径放置数据文件。
+重要：请在本地按如下路径放置数据文件。
 
 ## 目录结构
 ```
 up_github/
-  bast.py                  # 批量推理与可视化主脚本（最佳成绩版本）
+  bast.py                  # 批量推理与可视化主脚本
   src/
     NotoSansSC-Regular.otf # 中文可视化字体
   model/
     README.md              # 放置本地权重的说明
   data/                    # 请在本地创建（不提交仓库）
     images/                # 图像文件夹（与 JSON 中 image_path 对应）
-    VQA-SA-question.json   # 评测问题文件（保密，勿上传）
+    VQA-SA-question.json   # 评测问题文件
   requirements.txt         # 运行依赖
   run.sh                   # 运行脚本（Linux）
-  .gitignore               # 忽略大文件/私有数据
 ```
 
 ## 环境准备（Linux）
