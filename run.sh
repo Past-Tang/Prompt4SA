@@ -7,4 +7,4 @@ set -euo pipefail
 # 允许外部预设 CUDA_VISIBLE_DEVICES，否则使用默认值
 export CUDA_VISIBLE_DEVICES="${CUDA_VISIBLE_DEVICES:-0,1,2,3}"
 
-python bast.py
+python main.py

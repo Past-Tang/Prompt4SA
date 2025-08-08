@@ -108,12 +108,12 @@ def main():
         else:
             print("\n" + "="*50)
             print("提醒: 已跳过向 EvalAI 提交结果的步骤。")
-            print(f"原因: `PHASE_ID` 未设置或无效。请在脚本 `bast.py` 中设置有效的 `PHASE_ID`。")
+            print(f"原因: `PHASE_ID` 未设置或无效。请在脚本 `main.py` 中设置有效的 `PHASE_ID`。")
             print("="*50)
     else:
         print("\n" + "="*50)
         print("提醒: 根据全局设置，已跳过向 EvalAI 提交结果的步骤。")
-        print(f"如需自动提交，请在脚本 `bast.py` 中将 `SUBMIT_TO_EVALAI` 设置为 `True`。")
+        print(f"如需自动提交，请在脚本 `main.py` 中将 `SUBMIT_TO_EVALAI` 设置为 `True`。")
         print("="*50)
 
 def process_data_part(data_part, gpu_ids):
